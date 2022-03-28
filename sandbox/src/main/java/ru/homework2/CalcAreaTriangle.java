@@ -13,9 +13,10 @@ public class CalcAreaTriangle {
 
         DecimalFormat decimalFormat = new DecimalFormat("#.###");
         String result = decimalFormat.format(Segments.areatriangle(s.a, s.b, s.c));
-        if ((s.a + s.b <= s.c) || (s.a + s.c <= s.b) || (s.b +s.c <= s.a)) System.out.println("Треугольников с такими сторонами не бывает. Одна сторона больше суммы двух других сторон.");
+        if ((s.a + s.b <= s.c) || (s.a + s.c <= s.b) || (s.b + s.c <= s.a))
+            System.out.println("Треугольников с такими сторонами не бывает. Одна сторона больше суммы двух других сторон.");
         else
-        System.out.println("Площадь треугольника со сторонами " + s.a + ", " + s.b + ", " + s.c + " равна " + result);
+            System.out.println("Площадь треугольника со сторонами " + s.a + ", " + s.b + ", " + s.c + " равна " + result);
 
     }
 }
