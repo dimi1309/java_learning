@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 public class CalcAreaTriangle {
 
     public static void main(String[] args) {
-        Segments s = new Segments(1, 12, 9);
+        Segments s = new Segments(16, 12, 9);
 
         DecimalFormat decimalFormat = new DecimalFormat("#.###");
         String result = decimalFormat.format(Segments.areaTriangle(s.a, s.b, s.c));

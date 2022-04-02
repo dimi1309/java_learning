@@ -13,7 +13,7 @@ public class CalcDistance2 {
         Point2 p2 = new Point2(12, 14);
 
         DecimalFormat decimalFormat = new DecimalFormat("#.###");
-        String result = decimalFormat.format(Point.distance(p1, p2));
+        String result = decimalFormat.format(Point2.distance(p1, p2));
 
         System.out.println("Расстояние между точками p1 с координатами " + p1.x + ", " + p1.y + " и" + " p2 с координатами " + p2.x + ", " + p2.y + " равно " + result);
     }
