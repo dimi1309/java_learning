@@ -19,9 +19,10 @@ public class CalcAreaPolygon {
         System.out.println("Введите количество сторон многоугольника");
         n = in.nextInt();
         if (n < 3) {
-            System.out.println("Количество сторон многоугольника не может быть меньше трёх. Повторите ввод");
+            System.out.println("Количество сторон многоугольника не может быть меньше трёх. Повторите ввод. Результат расчёта бытен некорректный");
         } else {
             System.out.printf("Количество сторон многоугольника равно " + "%d \n", n);
+
         }
         in.close();
         SegmentsPolygon segmentsPolygon = new SegmentsPolygon(a, n);
