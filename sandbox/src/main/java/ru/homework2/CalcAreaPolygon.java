@@ -24,7 +24,8 @@ public class CalcAreaPolygon {
         System.out.println("Введите количество сторон многоугольника");
         numberSides = Integer.parseInt(reader.readLine());
         if (numberSides < 3) {
-            System.out.println("Количество сторон многоугольника не может быть меньше трёх. Повторите ввод." + " Результат расчёта будет некорректен");
+            System.out.println("Количество сторон многоугольника не может быть меньше трёх. Повторите ввод." +
+                    " Результат расчёта будет некорректен");
         } else {
             System.out.printf("Количество сторон многоугольника равно " + "%d \n", numberSides);
         }
@@ -32,6 +33,7 @@ public class CalcAreaPolygon {
         SegmentsPolygon segmentsPolygon = new SegmentsPolygon(sideLength, numberSides);
 
         result = SegmentsPolygon.areaPolygon(segmentsPolygon.sideLength, segmentsPolygon.numberSides);
-        System.out.printf("Площадь многоугольника с длиной стороны " + segmentsPolygon.sideLength + " и количеством сторон " + segmentsPolygon.numberSides + " равна " + "%.2f", result);
+        System.out.printf("Площадь многоугольника с длиной стороны " + segmentsPolygon.sideLength +
+                " и количеством сторон " + segmentsPolygon.numberSides + " равна " + "%.2f", result);
     }
 }
