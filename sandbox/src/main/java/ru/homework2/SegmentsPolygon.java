@@ -5,15 +5,15 @@ package ru.homework2;
  */
 public class SegmentsPolygon {
 
-    public int a;
-    public int n;
+    public int sideLength;
+    public int numberSides;
 
-    public SegmentsPolygon(int a, int n) {
-        this.a = a;
-        this.n = n;
+    public SegmentsPolygon(int sideLength, int numberSides) {
+        this.sideLength = sideLength;
+        this.numberSides = numberSides;
     }
 
-    public static double areaPolygon(int a, int n) {
-        return ((a * a * n) / (4 * Math.tan(Math.PI / n)));
+    public static double areaPolygon(int sideLength, int numberSides) {
+        return ((sideLength * sideLength * numberSides) / (4 * Math.tan(Math.PI / numberSides)));
     }
 }
